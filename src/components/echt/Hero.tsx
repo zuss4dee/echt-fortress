@@ -15,7 +15,7 @@ export function Hero() {
   const scanY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section ref={ref} className="relative min-h-screen overflow-hidden bg-background">
+    <section ref={ref} className="relative min-h-screen overflow-hidden">
       {/* top hairline meta bar */}
       <div className="absolute inset-x-0 top-0 z-20 border-b border-hairline">
         <div className="mx-auto flex max-w-[1600px] items-center justify-between px-8 py-5">

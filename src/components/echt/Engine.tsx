@@ -26,7 +26,7 @@ export function Engine() {
   const docY = useTransform(scrollYProgress, [0, 1], [40, -60]);
 
   return (
-    <section id="engine" ref={ref} className="relative border-t border-hairline bg-background py-32">
+    <section id="engine" ref={ref} className="relative border-t border-hairline py-32">
       <div className="mx-auto max-w-[1600px] px-8">
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 md:col-span-3">
