@@ -23,12 +23,16 @@ export const Route = createFileRoute("/")({
 function Index() {
   useLenis();
   return (
-    <main className="bg-background text-foreground">
-      <Hero />
-      <Proof />
-      <Engine />
-      <Partners />
-      <Clearance />
-    </main>
+    <>
+      <BackgroundField />
+      <main className="relative z-10 text-foreground">
+        <Hero />
+        <Proof />
+        <Engine />
+        <Partners />
+        <Clearance />
+      </main>
+    </>
   );
+
 }
