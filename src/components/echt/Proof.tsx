@@ -28,7 +28,7 @@ const STATS = [
 
 export function Proof() {
   return (
-    <section id="proof" className="relative border-t border-hairline bg-background py-32">
+    <section id="proof" className="relative border-t border-hairline py-32">
       <div className="mx-auto max-w-[1600px] px-8">
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 md:col-span-3">
