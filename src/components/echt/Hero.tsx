@@ -74,6 +74,30 @@ export function Hero() {
             >
               FORENSIC VERIFICATION FOR ENTERPRISE TENANT REFERENCING
             </motion.p>
+
+            {/* CTA buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.9, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-12 flex items-center justify-center gap-4"
+            >
+              <a
+                href="#clearance"
+                className="group relative inline-flex items-center justify-center bg-foreground px-8 py-4 text-primary-foreground label-micro transition-colors hover:bg-foreground/90"
+              >
+                <span className="relative z-10">Request Access</span>
+                <span className="absolute inset-y-0 right-0 w-px bg-primary-foreground/20" />
+                <span className="ml-3 text-primary-foreground/60 transition-colors group-hover:text-primary-foreground">→</span>
+              </a>
+              <a
+                href="#engine"
+                className="inline-flex items-center justify-center border border-hairline px-8 py-4 text-foreground label-micro transition-colors hover:border-foreground/30 hover:bg-foreground/[0.02]"
+              >
+                <span>View the Engine</span>
+                <span className="ml-3 text-muted-foreground">→</span>
+              </a>
+            </motion.div>
           </div>
 
           {/* suspended document */}
