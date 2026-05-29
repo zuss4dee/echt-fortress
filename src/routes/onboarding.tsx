@@ -34,9 +34,10 @@ function OnboardingPage() {
             <span className="label-micro text-muted-foreground">
               ONBOARDING · STEP {String(step).padStart(2, "0")} / 02
             </span>
-            <Link to="/" className="label-micro text-muted-foreground hover:text-foreground transition">
-              ← EXIT
-            </Link>
+            <div className="flex items-center gap-6">
+              <Link to="/login" className="label-micro text-muted-foreground hover:text-foreground transition">SIGN IN</Link>
+              <Link to="/" className="label-micro text-muted-foreground hover:text-foreground transition">← EXIT</Link>
+            </div>
           </div>
         </div>
 
