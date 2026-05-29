@@ -43,24 +43,22 @@ function OnboardingPage() {
         <div className="mx-auto grid max-w-[1600px] grid-cols-12 gap-8 px-8 py-20 md:py-28">
           {/* LEFT — static editorial */}
           <aside className="col-span-12 md:col-span-6 md:sticky md:top-28 md:self-start">
-            <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-10">
               <div className="flex items-center gap-3">
                 <span className="h-px w-10 bg-foreground" />
                 <span className="label-micro text-muted-foreground">CLEARANCE PROTOCOL · 2026</span>
               </div>
 
-              <h1 className="display-serif text-[clamp(56px,7vw,112px)] text-foreground">
+              <h1 className="display-serif text-[clamp(32px,3.2vw,52px)] text-foreground leading-[1.05]">
                 Secure your properties.
                 <br />
-                <span className="italic text-foreground/80">Prevent</span> the next
-                <br />
-                £10,000 eviction.
+                <span className="italic text-foreground/70">Prevent</span> the next £10,000 eviction.
               </h1>
 
-              <div className="flex items-end justify-between gap-6 border-t border-hairline pt-8">
+              <div className="flex items-end justify-between gap-6 border-t border-hairline pt-6">
                 <div>
                   <p className="label-micro text-muted-foreground">LOSSES PREVENTED — LIVE LEDGER</p>
-                  <p className="display-serif mt-3 text-[clamp(44px,5vw,76px)] text-foreground">£5M+</p>
+                  <p className="display-serif mt-2 text-[clamp(28px,3vw,48px)] text-foreground">£5M+</p>
                 </div>
                 <span className="label-micro text-verdict-green">● SIGNAL ACTIVE</span>
               </div>
