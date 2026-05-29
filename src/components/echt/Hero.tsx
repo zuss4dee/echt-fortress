@@ -30,7 +30,10 @@ export function Hero() {
             <a className="label-micro text-muted-foreground hover:text-foreground transition" href="#partners">Partners</a>
             <a className="label-micro text-muted-foreground hover:text-foreground transition" href="#clearance">Request Clearance</a>
           </nav>
-          <span className="label-micro text-muted-foreground">v 4.21 / LON</span>
+          <div className="flex items-center gap-6">
+            <Link to="/login" className="label-micro text-muted-foreground hover:text-foreground transition">Sign In</Link>
+            <span className="label-micro text-muted-foreground">v 4.21 / LON</span>
+          </div>
         </div>
       </div>
 
