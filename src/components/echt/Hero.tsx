@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "@tanstack/react-router";
 
 const META = [
   { k: "STATUS", v: "INTAKE / SCAN ACTIVE" },
