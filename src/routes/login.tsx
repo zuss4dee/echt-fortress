@@ -24,19 +24,20 @@ function LoginPage() {
       <BackgroundField />
       <main className="relative z-10 min-h-screen text-foreground">
         <div className="border-b border-hairline">
-          <div className="mx-auto flex max-w-[1600px] items-center justify-between px-8 py-5">
+          <div className="mx-auto flex max-w-[1600px] flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-8 sm:py-5">
             <Link to="/" className="flex items-center gap-3">
               <div className="h-2 w-2 bg-verdict-green" />
-              <span className="label-micro">ECHT — FORENSIC INTEGRITY</span>
+              <span className="label-micro">ECHT</span>
+              <span className="hidden label-micro sm:inline">— FORENSIC INTEGRITY</span>
             </Link>
-            <span className="label-micro text-muted-foreground">ACCESS · TIER I CLEARANCE</span>
+            <span className="hidden label-micro text-muted-foreground md:inline">ACCESS · TIER I CLEARANCE</span>
             <Link to="/" className="label-micro text-muted-foreground hover:text-foreground transition">
               ← EXIT
             </Link>
           </div>
         </div>
 
-        <div className="mx-auto grid min-h-[calc(100vh-65px)] max-w-[1600px] grid-cols-12 gap-8 px-8 py-20 md:py-28">
+        <div className="mx-auto grid min-h-[calc(100vh-65px)] max-w-[1600px] grid-cols-12 gap-6 px-4 py-12 sm:gap-8 sm:px-8 sm:py-20 md:py-28">
           {/* LEFT — editorial */}
           <aside className="col-span-12 md:col-span-6 md:sticky md:top-28 md:self-start">
             <div className="flex flex-col gap-10">

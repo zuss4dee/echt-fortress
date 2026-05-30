@@ -26,22 +26,23 @@ function OnboardingPage() {
       <main className="relative z-10 min-h-screen text-foreground">
         {/* top meta bar — mirrors landing */}
         <div className="border-b border-hairline">
-          <div className="mx-auto flex max-w-[1600px] items-center justify-between px-8 py-5">
+          <div className="mx-auto flex max-w-[1600px] flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-8 sm:py-5">
             <Link to="/" className="flex items-center gap-3">
               <div className="h-2 w-2 bg-verdict-green" />
-              <span className="label-micro">ECHT — FORENSIC INTEGRITY</span>
+              <span className="label-micro">ECHT</span>
+              <span className="hidden label-micro sm:inline">— FORENSIC INTEGRITY</span>
             </Link>
-            <span className="label-micro text-muted-foreground">
-              ONBOARDING · STEP {String(step).padStart(2, "0")} / 02
+            <span className="order-3 w-full label-micro text-muted-foreground sm:order-none sm:w-auto">
+              STEP {String(step).padStart(2, "0")} / 02
             </span>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-5 sm:gap-6">
               <Link to="/login" className="label-micro text-muted-foreground hover:text-foreground transition">SIGN IN</Link>
               <Link to="/" className="label-micro text-muted-foreground hover:text-foreground transition">← EXIT</Link>
             </div>
           </div>
         </div>
 
-        <div className="mx-auto grid max-w-[1600px] grid-cols-12 gap-8 px-8 py-20 md:py-28">
+        <div className="mx-auto grid max-w-[1600px] grid-cols-12 gap-6 px-4 py-12 sm:gap-8 sm:px-8 sm:py-20 md:py-28">
           {/* LEFT — static editorial */}
           <aside className="col-span-12 md:col-span-6 md:sticky md:top-28 md:self-start">
             <div className="flex flex-col gap-10">
