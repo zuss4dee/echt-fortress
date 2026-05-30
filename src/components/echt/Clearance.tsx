@@ -12,9 +12,9 @@ export function Clearance() {
   const [step, setStep] = useState(0);
 
   return (
-    <section id="clearance" className="relative border-t border-hairline py-32">
-      <div className="mx-auto max-w-[1600px] px-8">
-        <div className="grid grid-cols-12 gap-8">
+    <section id="clearance" className="relative border-t border-hairline py-20 sm:py-32">
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-8">
+        <div className="grid grid-cols-12 gap-6 sm:gap-8">
           <div className="col-span-12 md:col-span-3">
             <span className="label-micro text-muted-foreground">05 / 05 — CLEARANCE</span>
           </div>
@@ -25,14 +25,14 @@ export function Clearance() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-15%" }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="display-serif max-w-[14ch] text-[clamp(56px,9vw,140px)] text-foreground"
+              className="display-serif max-w-[14ch] text-[clamp(44px,9vw,140px)] text-foreground"
             >
               Request <span className="italic">access</span>.
             </motion.h2>
 
-            <div className="mt-16 border border-foreground bg-background">
+            <div className="mt-12 border border-foreground bg-background sm:mt-16">
               {/* clearance header */}
-              <div className="flex items-center justify-between border-b border-foreground px-6 py-4">
+              <div className="flex flex-col items-start justify-between gap-2 border-b border-foreground px-4 py-4 sm:flex-row sm:items-center sm:gap-3 sm:px-6">
                 <div className="flex items-center gap-3">
                   <span className="h-2 w-2 bg-verdict-green" />
                   <span className="label-micro">SECURE INTAKE · TLS 1.3</span>
@@ -49,11 +49,11 @@ export function Clearance() {
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.08, duration: 0.6 }}
                     onFocus={() => setStep(i + 1)}
-                    className="group block bg-background p-8 transition-colors focus-within:bg-foreground/[0.02]"
+                    className="group block bg-background p-6 transition-colors focus-within:bg-foreground/[0.02] sm:p-8"
                   >
                     <span className="label-micro text-muted-foreground">{String(i + 1).padStart(2, "0")} · {f.k}</span>
                     <input
-                      className="mt-6 w-full border-b border-hairline bg-transparent pb-2 font-sans text-2xl text-foreground outline-none transition-colors focus:border-foreground"
+                      className="mt-6 w-full border-b border-hairline bg-transparent pb-2 font-sans text-lg text-foreground outline-none transition-colors focus:border-foreground sm:text-2xl"
                       placeholder={f.ph}
                     />
                   </motion.label>
@@ -61,7 +61,7 @@ export function Clearance() {
               </div>
 
               {/* footer */}
-              <div className="flex flex-col items-start justify-between gap-6 border-t border-foreground px-6 py-6 md:flex-row md:items-center">
+              <div className="flex flex-col items-start justify-between gap-6 border-t border-foreground px-4 py-6 sm:px-6 md:flex-row md:items-center">
                 <div className="flex items-center gap-6">
                   <span className="label-micro text-muted-foreground">CLEARANCE LEVEL</span>
                   <div className="flex items-center gap-2">
@@ -99,7 +99,7 @@ export function Clearance() {
         </div>
       </div>
 
-      <footer className="mx-auto mt-32 flex max-w-[1600px] items-center justify-between border-t border-hairline px-8 py-8">
+      <footer className="mx-auto mt-20 flex max-w-[1600px] flex-col items-start justify-between gap-3 border-t border-hairline px-4 py-8 sm:mt-32 sm:flex-row sm:items-center sm:px-8">
         <div className="flex items-center gap-3">
           <div className="h-2 w-2 bg-foreground" />
           <span className="label-micro">ECHT — © 2026</span>
