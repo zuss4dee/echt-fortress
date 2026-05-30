@@ -45,7 +45,7 @@ export function BackgroundField() {
       />
 
       {/* coordinate label, top-left */}
-      <div className="absolute left-1/2 top-3 -translate-x-1/2 label-micro text-foreground/30">
+      <div className="absolute left-1/2 top-3 hidden -translate-x-1/2 label-micro text-foreground/30 md:block">
         51.5074° N — 0.1278° W
       </div>
     </div>
