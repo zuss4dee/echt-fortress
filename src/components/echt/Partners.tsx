@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 export function Partners() {
   return (
-    <section id="partners" className="relative border-t border-hairline bg-foreground py-32 text-background">
-      <div className="mx-auto max-w-[1600px] px-8">
-        <div className="grid grid-cols-12 gap-8">
+    <section id="partners" className="relative border-t border-hairline bg-foreground py-20 text-background sm:py-32">
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-8">
+        <div className="grid grid-cols-12 gap-6 sm:gap-8">
           <div className="col-span-12 md:col-span-3">
             <span className="label-micro text-background/50">04 / 05 — SCARCITY</span>
           </div>
@@ -18,13 +18,13 @@ export function Partners() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-15%" }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="display-serif mt-10 text-[clamp(56px,9vw,140px)]"
+              className="display-serif mt-8 text-[clamp(40px,9vw,140px)] sm:mt-10"
             >
               Twelve seats.<br />
               <span className="italic text-background/60">Three remain.</span>
             </motion.h2>
 
-            <div className="mt-16 grid grid-cols-1 gap-px bg-background/15 md:grid-cols-3">
+            <div className="mt-12 grid grid-cols-1 gap-px bg-background/15 sm:mt-16 sm:grid-cols-3">
               {[
                 { k: "FOUNDING PARTNER", v: "£2,400 / mo", note: "Locked. For life." },
                 { k: "STANDARD ENTERPRISE", v: "£6,800 / mo", note: "From Q3 2026." },
@@ -38,7 +38,7 @@ export function Partners() {
               ))}
             </div>
 
-            <div className="mt-12 flex flex-wrap items-center gap-6">
+            <div className="mt-10 flex flex-wrap items-center gap-6 sm:mt-12">
               <a
                 href="#clearance"
                 className="group inline-flex items-center gap-4 border border-background/30 px-7 py-5 transition hover:border-background"
